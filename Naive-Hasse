@@ -69,3 +69,12 @@ N_p <- as.integer(N_p)
 #Print table
 table <- data.frame(Primes = prime_list, Defect = a_p, Points = N_p)
 print(table)
+
+plot <- ggplot(table, aes(x = Primes, y = Defect)) +
+  geom_point() +  #Add points
+  stat_function(fun = function(x) 2 * sqrt(x), color = "red") +  #Add 2sqrt(x) line
+  stat_function(fun = function(x) -2 * sqrt(x), color = "red") +  #Add -2sqrt(x) line
+  labs(title = "Hasse's Theorem", subtitle="Primes Compared to Defects", x = "Prime", y = "P-Defect") +
+  theme_minimal()
+
+print(plot)
