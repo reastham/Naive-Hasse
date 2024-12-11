@@ -35,7 +35,7 @@ library(DT)
         p <<- input$p
         
         # Source the script to execute it
-        source("Naive.R", local = TRUE)
+        source("Naive-Hasse.R", local = TRUE)
         
         # Return the table and plot created in Naive.R
         list(table = table, plot = plot)
