@@ -1,0 +1,6 @@
+### Capstone Thesis: A Mathematical Overview of Elliptic Curve Cryptography
+### Created by: [Rae Eastham](mailto:reastham@callutheran.edu), California Lutheran University
+
+This program uses the Naive Algorithm to create a table for the p-defect and number of points for an elliptic curve. It also plots the primes against the defect to illustrate Hasse's Theorem. 
+
+Simply input a and b for an elliptic curve of the form y^2 = x^3 + ax + b. Then input p for the program to calculate the number of points over finite fields modulo primes up to p.
